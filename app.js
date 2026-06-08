@@ -3,7 +3,7 @@
 // ==========================================
 // ⚠️ REMPLACE CETTE URL PAR LA TIENNE (fournie par ton tableau de bord Vercel)
 // Ne mets pas de "/" à la fin de l'URL.
-const API_BASE_URL = "https://air-convers.vercel.app"; 
+const API_BASE_URL = window.location.origin;
 
 // ==========================================
 // 2. GESTION DU THÈME (CLAIR / SOMBRE)
