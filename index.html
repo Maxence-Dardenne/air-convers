@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Convers' | Convertisseur Multimédia Professionnel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo" id="logo-link">
+            <div class="logo-icon">✨</div>
+            Air Convers'
+        </a>
+        <nav>
+            <button class="nav-btn active" id="btn-home">Convertisseur</button>
+            <button class="nav-btn" id="btn-about">À propos</button>
+            <button class="theme-toggle" id="theme-toggle">🌓 Thème</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home-view" class="view active">
+            <div class="hero">
+                <h1>Convertis avec <span class="highlight-blue">Style</span> & <span class="highlight-red">Vitesse</span></h1>
+                <p>La plateforme web la plus éclatante pour convertir et télécharger vos médias en un clin d'œil.</p>
+            </div>
+
+            <div class="converter-card">
+                <form id="convert-form">
+                    <div class="input-group">
+                        <input type="url" id="url-input" class="url-input" placeholder="Collez l'URL (YouTube, Vimeo, etc.) ici..." required>
+                        <select id="format-select" class="format-select">
+                            <option value="mp3">🎵 MP3 (Audio)</option>
+                            <option value="mp4">🎥 MP4 (Vidéo)</option>
+                            <option value="wav">🌊 WAV (Audio HD)</option>
+                            <option value="webm">🌐 WEBM (Web)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-convert" id="submit-btn">🚀 Lancer la conversion</button>
+                </form>
+
+                <div class="status-container" id="status-container">
+                    <div class="status-header">
+                        <span id="status-text">Analyse du lien...</span>
+                        <span id="status-percent">0%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <h2>Vos conversions récentes</h2>
+                <div class="history-list" id="history-list">
+                    </div>
+            </div>
+        </section>
+
+        <section id="about-view" class="view">
+            <div class="about-content">
+                <h2>À propos de Air Convers'</h2>
+                <p><strong>Air Convers'</strong> est une application moderne conçue pour simplifier la récupération de vos contenus multimédias préférés directement depuis votre navigateur.</p>
+                <p>Inspiré par l'identité visuelle forte et colorée du web contemporain (courant néo-brutaliste), ce service met l'accent sur les performances, l'absence de publicités intrusives et le plaisir d'utilisation.</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="notification-area"></div>
+
+    <footer>
+        Créé par <a href="https://maxence-dardenne.github.io" target="_blank" rel="noopener noreferrer">Maxence Dardenne</a> | Air Convers' © 2026
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
